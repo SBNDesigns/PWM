@@ -1,4 +1,4 @@
-module pwm_improved_tb(
+module pwm_tb(
 
     );
     localparam R = 8;
@@ -10,7 +10,7 @@ module pwm_improved_tb(
     wire pwm_out;
 
     // Instantiate module under test    
-    pwm_improved #(.R(R), .TIMER_BITS(TIMER_BITS)) uut (
+    pwm #(.R(R), .TIMER_BITS(TIMER_BITS)) uut (
         .clk(clk),
         .reset_n(reset_n),
         .duty(duty),
